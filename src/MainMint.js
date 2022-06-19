@@ -4,7 +4,7 @@ import './NavBar.css';
 import { ethers, BigNumber } from 'ethers';
 import ChakraNFT from './ChakraNFT.json';
 
-const chakraNFTAddress = "0x603277d6e3223C25ea9F7193053A95d256023753"
+const chakraNFTAddress = ""
 
 const MainMint = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0]);
