@@ -14,7 +14,11 @@ contract ChakraNFT is ERC721Enumerable, Ownable {
   uint256 public maxSupply = 32;
   uint256 public maxMintAmount = 1;
 
-  constructor() ERC721("Chakra", "CKRA") {}
+  constructor(
+    string memory _initBaseURI
+  ) ERC721("Chakra", "CKRA") {
+    setBaseURI(_initBaseURI);
+  }
 
   // internal
   function _baseURI() internal view virtual override returns (string memory) {
