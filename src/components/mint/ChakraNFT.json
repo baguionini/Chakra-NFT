@@ -1,5 +1,6 @@
 {
     "_format": "hh-sol-artifact-1",
+    "address": "0xEf5d19FF010AB1960E480e3152eEEE26a870b3E3",
     "contractName": "ChakraNFT",
     "sourceName": "contracts/Chakra.sol",
     "abi": [

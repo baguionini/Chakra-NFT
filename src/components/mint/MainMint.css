@@ -1,0 +1,18 @@
+.MainMint {
+  color: white;
+}
+
+
+.button-mint {
+  margin-top: 15px;
+  color: #202020;
+  border-width: 0 0 0 10px;
+  border-style: solid;
+  border-color: #96F500;
+  background-color: white;
+  font-family: "Helvetica Neue";
+  padding: 20px 20px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 25px;
+}

@@ -1,0 +1,26 @@
+.NavBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.connect-button-false {
+  background-color: #202020;
+  border: 1px solid #202020;
+  color: #96F500;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  padding: 25px 25px;
+  width: 220px;
+  cursor: pointer;
+}
+
+.connect-button-true {
+  background-color: #202020;
+  border: 1px solid #202020;
+  color: #96F500;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  padding: 25px 25px;
+  width: 220px;
+}

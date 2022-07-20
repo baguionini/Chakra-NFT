@@ -1,28 +1,27 @@
 import { useState } from 'react';
 import React from "react";
 import './App.css';
-import MainMint from './MainMint';
-import NavBar from './NavBar';
-import logo from './assets/white.png';
+
+import NavBar from './components/navbar/NavBar';
+import Image from './components/image/Image';
+import Description from './components/description/Description'
 
 function App() {
   const [accounts, setAccounts] = useState([]);
 
   return (
-    <div className="App">
+    <>
       <NavBar accounts={accounts} setAccounts={setAccounts}/>
-      <div className="Title">
-        <h1>Chakra</h1>
-        <p>An NFT collection of 32 generative art built using Samila.</p>
+      <div className="row">
+        <div className="column">
+          <Image/>
+        </div>
+        <div className="column-right">
+          <Description accounts={accounts}/>
+        </div>
       </div>
-      <div className="Main">
-        <img 
-          className="Image"
-          src={logo}
-        />
-        <MainMint accounts={accounts} setAccounts={setAccounts}/>
-      </div>
-    </div>
+
+    </>
   );
 }
 

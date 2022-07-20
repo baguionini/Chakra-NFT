@@ -1,22 +1,19 @@
 import React from "react";
 import './MainMint.css';
-import './NavBar.css';
 import { ethers, BigNumber } from 'ethers';
-import ChakraNFT from './ChakraNFT.json';
+import ChakraContract from './ChakraNFT.json';
 
-const chakraNFTAddress = ""
-
-const MainMint = ({ accounts, setAccounts }) => {
+const MainMint = ({ accounts }) => {
     const isConnected = Boolean(accounts[0]);
-
+    
     async function handleMint() {
         if (window.ethereum) {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();
 
             const contract = new ethers.Contract(
-                chakraNFTAddress,
-                ChakraNFT.abi,
+                ChakraContract.address,
+                ChakraContract.abi,
                 signer
             );
 
@@ -31,10 +28,9 @@ const MainMint = ({ accounts, setAccounts }) => {
 
     return (
         <div className="MainMint">
-            <h2>Minting here</h2>
             {isConnected ? (
                 <div>
-                    <button class="button-23" onClick={handleMint}>Mint 1 NFT</button>
+                    <button class="button-mint" onClick={handleMint}>Mint a Chakra</button>
                 </div>
             ) : (
                 <p>You must be connected to Mint.</p>

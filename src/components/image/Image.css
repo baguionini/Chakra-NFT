@@ -1,0 +1,31 @@
+.Image {
+    width: 95%;
+}
+
+.button-opensea {
+    color: #202020;
+    border: 1px solid #96F500;
+    background-color: #96F500;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
+    padding: 25px 25px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left, .middle {
+    text-align: center;
+    background-color: #9BADBD;
+    color: black;
+    width: 25%;
+}
+
+.right {
+    width: 50%;
+}

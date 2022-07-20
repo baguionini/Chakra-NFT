@@ -15,11 +15,22 @@ const NavBar = ({ accounts, setAccounts }) => {
 
     return(
         <div className="NavBar">
-            {isConnected ? (
-                <p>Connected</p>
-            ) : (
-                <button class="button-23" onClick={connectAccount}>Connect Metamask</button>
-            )}
+            {isConnected ? 
+            <button 
+                class="connect-button-true" 
+                disabled={true}
+            >
+                Connected
+            </button>
+            : 
+            <button 
+                class="connect-button-false" 
+                onClick={connectAccount}
+                style={{cursor: 'pointer'}}
+            >
+            Connect to Metamask
+            </button>
+            }
         </div>
     )
 };

@@ -1,19 +1,26 @@
-.App {
-  text-align: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
-.Title {
-  color: white;
+.column-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-top: 5%;
 }
 
-.Main{
-  align-items: center;
-}
-
-.Image {
-  height: 300px;
-  width: 300px;
-  border-radius: 5%;
+.nft-title {
+  font-size: 75px;
+  margin-bottom: 0;
+  
 }
